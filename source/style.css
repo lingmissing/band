@@ -1,0 +1,123 @@
+@font-face {
+  font-family: pp-regular;
+  /*这里是说明调用来的字体名字*/
+  src: url('./font.otf');
+  /*这里是字体文件路径*/
+}
+
+@font-face {
+  font-family: pp-regular;
+  /*这里是说明调用来的字体名字*/
+  src: url('./font.ttf');
+}
+
+* {
+  font-family: pp-regular;
+  margin: 0;
+  padding: 0;
+}
+
+.band {
+  background: url('../assets/bg2.png') no-repeat center;
+  background-size: cover;
+  padding-bottom: 25px;
+}
+
+.band-time {
+  font-family: fantasy, pp-regular;
+  display: block;
+  padding: 20px 0;
+  color: #fff;
+  font-size: 35px;
+  text-align: center;
+}
+
+.band-purpose {
+  font-family: fantasy, pp-regular;
+  color: purple;
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+
+.band-img-1 {
+  display: block;
+  width: 270px;
+  margin: 0 auto 22px;
+}
+
+.band-img-2 {
+  display: block;
+  width: 147px;
+  margin: 0 auto 25px;
+}
+
+.band-img-3 {
+  display: block;
+  width: 274px;
+  margin: 0 auto 19px;
+}
+
+.band-button-box {
+  margin: 0 10px;
+  padding: 12px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.band-button {
+  display: block;
+  margin: 0 auto;
+  width: 97px;
+  border-radius: 5px;
+  display: block;
+  background: blue;
+  color: #fff;
+  height: 28px;
+  font-size: 20px;
+  appearance: none;
+  outline: 0;
+  border-width: 0;
+  position: relative;
+}
+
+.band-button::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  display: block;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  left: 11px;
+  top: 11px;
+}
+
+.band-button::after {
+  content: '';
+  width: 6px;
+  height: 6px;
+  display: block;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  right: 11px;
+  top: 11px;
+}
+
+.band-detail {
+  font-family: pp-regular;
+  font-size: 18px;
+  margin: 0 15px 0;
+  background: rgba(0, 0, 0, 0.08);
+  padding: 14px 11px;
+  color: rgba(255, 255, 255, 0.7);
+  white-space: pre-line;
+}
+
+.detail-footer {
+  font-family: pp-regular;
+  color: #fff;
+  font-size: 22px;
+  text-align: center;
+  margin-top: 15px;
+}
